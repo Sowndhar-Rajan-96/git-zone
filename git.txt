@@ -1,41 +1,29 @@
-🔹 Git Command Guide with Explanations
+cd reponame → Change directory to your project folder.
+Example: cd my-project
 
-    cd reponame → Change directory to the repository folder.
-    Example: cd my-repo
+git add filename → Moves specific untracked/modified files from the working directory to the staging area.
+Example: git add index.html
 
-    git init → Initializes an empty Git repository.
-    This converts the folder into a Git-tracked project (files become untracked initially).
+git add . → Stages all changes (including new, modified, and deleted files) in your project folder.
 
-    git add filename → Stages a specific file for the next commit.
-    Example: git add index.html
+git commit -m "commit message" → Moves files from the staging area to the Git folder (local repository history).
+Example: git commit -m "Added new feature"
 
-    git add . → Stages all changes (new, modified, and deleted files) in the current folder.
+git push origin main → Pushes committed changes from the local repository to the remote repository (e.g., GitHub).
+Example: git push origin main
 
-    git status → Displays the status of files (tracked, untracked, staged, etc.).
+git pull → Fetches the latest changes from the remote repository and merges them into your local repository.
+Example: git pull origin main
 
-    git commit -m "commit message" → Records staged changes with a descriptive message.
-    Example: git commit -m "Initial commit"
-
-    git remote add origin <repo-link> → Links your local repo to the remote repository.
-    Example: git remote add origin https://github.com/username/my-repo.git
-
-    git branch → Displays the current branch.
-
-    git branch -m main → Renames the current branch to main.
-    (Best practice since GitHub now defaults to main instead of master).
-
-    git push origin main → Pushes your committed changes to the remote repository.
-
-    git pull → Fetches the latest changes from the remote repo and merges them into your local repo.
-
-    cd .. → Moves back one directory in the folder structure.
-
-    git branch -a → Lists all branches (local & remote).
-
-    git checkout branchname → Switches to another branch.
-    Example: git checkout feature-branch
-
-    git diff branchname → Compares your current branch with another branch to see the differences.
-
-    git merge branchname → Merges changes from the specified branch into the current branch.
-    Example: git merge feature-branch
+cd .. → Correct, this command is for navigating one directory up. Not Git-specific but useful in workflow.
+git init → Initializes a new Git repository in the current folder. This converts the folder into a Git-tracked folder (untracked files appear until added).
+git add . → Stages all modified and newly created files in the current directory.
+git commit -m "commit message" → Commits staged changes to the local repository with a descriptive message.
+git remote add origin <repo-link> → Links your local repo to a remote repo (like GitHub). The origin is just a conventional name for the remote; you can name it differently if you prefer.
+git branch → Lists the branches in the repo.
+git branch -m main → Renames the current branch to main.
+git push origin main → Pushes your local changes in the main branch to the remote repository.
+git branch -a → Lists all branches (local and remote).
+git checkout <branchname> → Switches to the specified branch.
+git diff <branchname> → Shows differences between your current branch and the specified branch.
+git merge <branchname> → Merges the specified branch into your current branch. Typically, you merge changes from a feature branch into main before pushing.
