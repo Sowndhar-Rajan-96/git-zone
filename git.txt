@@ -1,0 +1,41 @@
+🔹 Git Command Guide with Explanations
+
+    cd reponame → Change directory to the repository folder.
+    Example: cd my-repo
+
+    git init → Initializes an empty Git repository.
+    This converts the folder into a Git-tracked project (files become untracked initially).
+
+    git add filename → Stages a specific file for the next commit.
+    Example: git add index.html
+
+    git add . → Stages all changes (new, modified, and deleted files) in the current folder.
+
+    git status → Displays the status of files (tracked, untracked, staged, etc.).
+
+    git commit -m "commit message" → Records staged changes with a descriptive message.
+    Example: git commit -m "Initial commit"
+
+    git remote add origin <repo-link> → Links your local repo to the remote repository.
+    Example: git remote add origin https://github.com/username/my-repo.git
+
+    git branch → Displays the current branch.
+
+    git branch -m main → Renames the current branch to main.
+    (Best practice since GitHub now defaults to main instead of master).
+
+    git push origin main → Pushes your committed changes to the remote repository.
+
+    git pull → Fetches the latest changes from the remote repo and merges them into your local repo.
+
+    cd .. → Moves back one directory in the folder structure.
+
+    git branch -a → Lists all branches (local & remote).
+
+    git checkout branchname → Switches to another branch.
+    Example: git checkout feature-branch
+
+    git diff branchname → Compares your current branch with another branch to see the differences.
+
+    git merge branchname → Merges changes from the specified branch into the current branch.
+    Example: git merge feature-branch
